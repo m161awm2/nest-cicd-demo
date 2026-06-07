@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NestJS CI/CD Demo</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <main class="page">
+      <section class="hero" aria-labelledby="page-title">
+        <p class="eyebrow">NestJS + GitHub Actions + EC2 + PM2</p>
+        <h1 id="page-title">NestJS CI/CD Demo</h1>
+        <p class="description">
+          GitHub Actions를 통해 EC2에 자동 배포되는 예제입니다.
+        </p>
+
+        <div class="time-panel">
+          <span class="time-label">현재 서버 시간</span>
+          <strong id="server-time">불러오는 중...</strong>
+          <span id="server-timezone" class="timezone">API: GET /api/time</span>
+        </div>
+      </section>
+
+      <section class="flow" aria-label="배포 흐름">
+        <div class="flow-step">GitHub Push</div>
+        <div class="flow-arrow">→</div>
+        <div class="flow-step">GitHub Actions</div>
+        <div class="flow-arrow">→</div>
+        <div class="flow-step">EC2</div>
+        <div class="flow-arrow">→</div>
+        <div class="flow-step">PM2</div>
+      </section>
+    </main>
+
+    <script src="/script.js"></script>
+  </body>
+</html>
