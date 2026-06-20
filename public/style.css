@@ -68,6 +68,17 @@ h1 {
   line-height: 1.7;
 }
 
+.deploy-badge {
+  width: fit-content;
+  margin: 22px 0 0;
+  padding: 10px 14px;
+  border-radius: 8px;
+  background: rgba(15, 159, 143, 0.12);
+  color: #08786d;
+  font-size: 0.96rem;
+  font-weight: 800;
+}
+
 .time-panel {
   margin-top: 36px;
   padding: 22px 24px;
